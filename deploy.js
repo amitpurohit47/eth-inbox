@@ -3,8 +3,8 @@ const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
 
 const provider = new HDWalletProvider(
-  "dwarf crack raw ill grief rocket genre satisfy arrow kit entire egg",
-  "https://goerli.infura.io/v3/72021f9b0e164da4bf78e3609ba8548a"
+  process.env.ACCOUNT_MNEMONIC,
+  process.env.INFURA
 );
 
 const web3 = new Web3(provider);
